@@ -1,4 +1,4 @@
 FROM fedora:latest
 ADD test.sh /tmp/test.sh
 RUN chmod +x /tmp/test.sh
-CMD ["bash /tmp/test.sh"]
+ENTRYPOINT /tmp/test.sh ; /bin/bash
